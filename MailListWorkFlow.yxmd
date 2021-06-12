@@ -130,7 +130,7 @@ Query=`p1-mailinglist$`</DefaultAnnotationText>
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\Users\gluca\AppData\Local\Temp\Engine_9376_d242c847b3ea48f3a7ea3ef9b9ab8b3d_\Engine_3976_a97d0e79930f4eba8e3d6062de7a5b8e_.yxdb</TempFile>
+          <TempFile>C:\Users\gluca\AppData\Local\Temp\Engine_17868_e588189a8c844e52a1e22f3a07177fe9_\Engine_3976_c0e6540b48c041bca8b867a2e8d9e2fa_.yxdb</TempFile>
           <TempFileDataProfiling />
           <Layout>
             <ViewMode>Single</ViewMode>
@@ -206,7 +206,7 @@ Query=`p1-mailinglist$`</DefaultAnnotationText>
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\Users\gluca\AppData\Local\Temp\Engine_9376_d242c847b3ea48f3a7ea3ef9b9ab8b3d_\Engine_3976_c204d24c2e66431bb0dfaf1e3a8dbf38_.yxdb</TempFile>
+          <TempFile>C:\Users\gluca\AppData\Local\Temp\Engine_17868_e588189a8c844e52a1e22f3a07177fe9_\Engine_3976_cfe834f3908a435b9952d85f42baca50_.yxdb</TempFile>
           <TempFileDataProfiling />
           <Layout>
             <ViewMode>Single</ViewMode>
@@ -235,63 +235,19 @@ Query=`p1-mailinglist$`</DefaultAnnotationText>
       <Properties>
         <Configuration>
           <FormulaFields>
-            <FormulaField expression="([Score_Yes]*[Score])-(6.5*[Avg_Num_Products_Purchased])" field="Score" size="8" type="Double" />
+            <FormulaField expression="([Score_Yes]*[Score])" field="Score" size="8" type="Double" />
+            <FormulaField expression="[Score]*0.50- 6.5" field="Score" size="8" type="Double" />
           </FormulaFields>
         </Configuration>
         <Annotation DisplayMode="0">
           <Name />
-          <DefaultAnnotationText><![CDATA[Score = ([Score_Yes]*[Score])-(6.5*[Avg_Num_Products_Purchased])
+          <DefaultAnnotationText><![CDATA[Score = ([Score_Yes]*[Score])
+Score = [Score]*0.50- 6.5
 ]]></DefaultAnnotationText>
           <Left value="False" />
         </Annotation>
       </Properties>
       <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
-    </Node>
-    <Node ToolID="13">
-      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
-        <Position x="846" y="366" />
-      </GuiSettings>
-      <Properties>
-        <Configuration>
-          <SummarizeFields>
-            <SummarizeField field="Score" action="Sum" rename="Sum_Score" />
-          </SummarizeFields>
-        </Configuration>
-        <Annotation DisplayMode="0">
-          <Name />
-          <DefaultAnnotationText />
-          <Left value="False" />
-        </Annotation>
-      </Properties>
-      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
-    </Node>
-    <Node ToolID="14">
-      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
-        <Position x="942" y="366" />
-      </GuiSettings>
-      <Properties>
-        <Configuration>
-          <TempFile>C:\Users\gluca\AppData\Local\Temp\Engine_9376_d242c847b3ea48f3a7ea3ef9b9ab8b3d_\Engine_3976_37ba83098a334e9f9615917872606ce0_.yxdb</TempFile>
-          <TempFileDataProfiling />
-          <Layout>
-            <ViewMode>Single</ViewMode>
-            <ViewSize value="100" />
-            <View1>
-              <DefaultTab>Profile</DefaultTab>
-              <Hints>
-                <Table />
-              </Hints>
-            </View1>
-            <View2 />
-          </Layout>
-        </Configuration>
-        <Annotation DisplayMode="0">
-          <Name />
-          <DefaultAnnotationText />
-          <Left value="False" />
-        </Annotation>
-      </Properties>
-      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
     </Node>
     <Node ToolID="20">
       <GuiSettings>
@@ -299,7 +255,7 @@ Query=`p1-mailinglist$`</DefaultAnnotationText>
       </GuiSettings>
       <Properties>
         <Configuration>
-          <Value name="x var">Customer_ID</Value>
+          <Value name="x var">Avg_Num_Products_Purchased</Value>
           <Value name="y var">Avg_Sale_Amount</Value>
           <Value name="y binary">False</Value>
           <Value name="y level" />
@@ -352,41 +308,13 @@ Query=`p1-mailinglist$`</DefaultAnnotationText>
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\Users\gluca\AppData\Local\Temp\Engine_9376_d242c847b3ea48f3a7ea3ef9b9ab8b3d_\Engine_3976_7d0b27aac0514504898b9f7a33c5fab4_.yxdb</TempFile>
+          <TempFile>C:\Users\gluca\AppData\Local\Temp\Engine_17868_e588189a8c844e52a1e22f3a07177fe9_\Engine_3976_7ac429bca1b648488482aeca6aa380a2_.yxdb</TempFile>
           <TempFileDataProfiling />
           <Layout>
             <ViewMode>Single</ViewMode>
             <ViewSize value="100" />
             <View1>
               <DefaultTab>Report</DefaultTab>
-              <Hints>
-                <Table />
-              </Hints>
-            </View1>
-            <View2 />
-          </Layout>
-        </Configuration>
-        <Annotation DisplayMode="0">
-          <Name />
-          <DefaultAnnotationText />
-          <Left value="False" />
-        </Annotation>
-      </Properties>
-      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
-    </Node>
-    <Node ToolID="22">
-      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
-        <Position x="738" y="366" />
-      </GuiSettings>
-      <Properties>
-        <Configuration>
-          <TempFile>C:\Users\gluca\AppData\Local\Temp\Engine_9376_d242c847b3ea48f3a7ea3ef9b9ab8b3d_\Engine_3976_4d5869c0299c410aa1c236c40422baab_.yxdb</TempFile>
-          <TempFileDataProfiling />
-          <Layout>
-            <ViewMode>Single</ViewMode>
-            <ViewSize value="100" />
-            <View1>
-              <DefaultTab>Profile</DefaultTab>
               <Hints>
                 <Table />
               </Hints>
@@ -421,6 +349,52 @@ Query=`p1-mailinglist$`</DefaultAnnotationText>
         </Annotation>
       </Properties>
       <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="25">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="774" y="366" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="Score" action="Sum" rename="Sum_Score" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="26">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="870" y="366" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\gluca\AppData\Local\Temp\Engine_17868_e588189a8c844e52a1e22f3a07177fe9_\Engine_3976_fb6c804fbd014e518008952d61ec66de_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
     </Node>
   </Nodes>
   <Connections>
@@ -458,19 +432,15 @@ Query=`p1-mailinglist$`</DefaultAnnotationText>
     </Connection>
     <Connection>
       <Origin ToolID="12" Connection="Output" />
-      <Destination ToolID="13" Connection="Input" />
-    </Connection>
-    <Connection>
-      <Origin ToolID="12" Connection="Output" />
-      <Destination ToolID="22" Connection="Input" />
-    </Connection>
-    <Connection>
-      <Origin ToolID="13" Connection="Output" />
-      <Destination ToolID="14" Connection="Input" />
+      <Destination ToolID="25" Connection="Input" />
     </Connection>
     <Connection>
       <Origin ToolID="20" Connection="Scater Output" />
       <Destination ToolID="21" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="25" Connection="Output" />
+      <Destination ToolID="26" Connection="Input" />
     </Connection>
   </Connections>
   <Properties>
